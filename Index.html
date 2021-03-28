@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple website</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body class="light-theme"> 
+   
+    <!--CALCULADORA-->
+    <p id="title">MyCalculadora</p>
+    <div class='main'>
+      <form name='form' id="FormAlign">
+          <input type="text" name='textbox' id="textbox">
+      </form>
+      <table>
+          <tr class='numbers'>
+              <td><input type='button' value='C' class='buttons' onclick='clean()'></td> 
+              <td><input type='button' value='<' class='buttons' onclick='back()'></td>
+              <td><input type='button' value='-' class='buttons' onclick='insert("-")'></td>
+              <td><input type='button' value='+' class='buttons' onclick='insert("+")'></td>
+
+          </tr>
+          <tr class='numbers'>
+              <td><input type="button" value='1' class='buttons' onclick="insert(1)"></td>
+              <td><input type='button' value='2' class='buttons' onclick="insert(2)"></td>
+              <td><input type='button' value='3' class='buttons' onclick="insert(3)"></td>
+              <td><input type='button' value='/' class='buttons' onclick='insert("/")'></td>
+          </tr>
+          <tr class='numbers'>
+              <td><input type='button' value='4' class='buttons' onclick='insert(4)'></td>
+              <td><input type='button' value='5' class='buttons' onclick='insert(5)'></td>
+              <td><input type='button' value='6' class='buttons' onclick='insert(6)'></td>
+              <td><input type='button' value='*' class='buttons' onclick='insert("*")'></td>
+          </tr>
+          <tr class='numbers'>
+              <td><input type='button' value='7' class='buttons' onclick='insert(7)'></td>
+              <td><input type='button' value='8' class='buttons' onclick='insert(8)'></td>
+              <td><input type='button' value='9' class='buttons' onclick='insert(9)'></td>
+              <td><input type='button' value='=' class='buttons' onclick='total()'></td>
+          </tr>
+          <tr class='numbers'>
+              <td><input type='button' value='.' class='buttons' onclick='insert(".")'></td>
+              <td><input type='button' value='0' class='buttons' onclick='insert(0)'></td>
+          </tr>
+      </table>
+  </div>
+</body>
+</html>
+<!--END CALCULADORA-->
+
+
+    <!--BOTÃO DARK-LIGHT MODE-->
+    <div>
+      <button class="btn">Dark</button>
+    </div>
+    <!--END - BOTÃO DARK-LIGHT MODE-->
+
+    <!--CONFIGURAÇÃO DE CONEXÃO DO JAVA SCRIPT-->
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>  
+    <!--END - CONFIGURAÇÃO DE CONEXÃO DO JAVA SCRIPT-->
+
+  </body>
+  
+</html>

@@ -1,0 +1,70 @@
+body {
+    font-family: monospace;
+    background: var(--bg);
+}
+
+  :root {
+    --FullWhite: #e9f0e5;
+    --RealyGrey: #ffffff65;
+    --black: #000000;
+    --blackGround :#222222;
+  }
+
+  * {
+    color: var(--fontColor);
+    font-family: helvetica;
+    padding: 0;
+    margin: 0;
+  }
+
+  #title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.main{
+    margin: 0 auto;
+}
+
+.buttons{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2;
+}
+
+#textbox{
+    width: 211px;
+    height: 30px;
+} 
+
+  .light-theme {
+    --bg: var(--FullWhite);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--RealyGrey);
+  }
+  
+  .dark-theme {
+    --bg: var(--blackGround);
+    --fontColor: var(--black);
+    --btnBg: var(--RealyGrey);
+    --btnFontColor: var(--black);
+
+  }
+
+  .btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+
+  .btn:focus { outline-style: none; }
+
